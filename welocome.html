@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="C:\xampp\htdocs\ProjectHTML\welcome.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type="text/javascript">
+        function validate(){
+          var name=document.getElementById("name").value;
+          var email=document.getElementById("email").value;
+
+          if(name===""||name==null){
+          alert("Please enter name");
+          }
+          alert(name);
+          var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+          if (email.match(validRegex)) {
+            alert("Valid email address!");
+            }
+          else {
+
+           alert("Invalid email address!");
+
+           document.form1.email.focus();
+
+          }
+          }
+    </script>
+  </head>
+  <body>
+    <main>
+      <div >
+      <ul class="bar">
+        <div class="logo">
+          <img src="C:\xampp\htdocs\ProjectHTML\unnamed.png" height="100" alt="">
+        </div>
+        <li>
+          <a href="C:\xampp\htdocs\ProjectHTML\welocome.html">Home</a>
+        </li>
+        <li>
+          <a href="C:\xampp\htdocs\ProjectHTML\About.html" target="_top">About Us</a>
+        </li>
+        <li>
+          <a href="C:\xampp\htdocs\ProjectHTML\service.html" target="_top">Services</a>
+        </li>
+      </ul>
+    </div>
+    <div class="">
+      <div class="image">
+        <img src="C:\xampp\htdocs\ProjectHTML\doc.jpg" height="500px" width="100%" alt="" >
+        <p ><strong>VISUDH AJIVAM PVT LTD</strong> is one of the best digital platform for health care services integrated with pharmacies, doctors, labtests, diagnosis centres across India to provide world class Healthcare facilities to individuals across the country.This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.We make sure that the quality of service you are getting is world class we give you this gurranty with every service you opt for online as well as offline.We are one stop solution for your problems.We are covering a wide range of products, test and doctors with speciality in different feilds to make the service wide and safest.</p>
+      </div>
+    </div>
+    <div class="formFill">
+      <center><h3>Contact Us</h3></center>
+        <form class="" action="index.html" method="post" onsubmit="validate()">
+          <input type="text" name="name" value="" placeholder="Enter Your name" required>
+          <input type="email" name="email" value=""placeholder="Enter Your email Id" required>
+          <textarea name="name" rows="8" cols="80" placeholder="Enter Your message" required></textarea>
+          <input type="submit" class="submit" name="submit" value="Submit">
+        </form>
+    </div>
+    </main>
+    </footer>
+    <footer class="footer">
+      <div class="row">
+        <div class="col">
+          <h3>For Medical Professionals</h3><br />
+          <a href="#">Find a doctor</a><br>
+            <a href="#">Refer a patient</a><br />
+              <a href="#">View Clinical Trial</a>
+        </div>
+        <div class="col">
+          <h3>For International Patients</h3><br />
+          <a href="#">Request an appointment</a><br>
+            <a href="#">Financial Service</a><br />
+              <a href="#">International office</a>
+        </div>
+        <div class="col">
+          <h3>Visit us at</h3><br />
+          <div class="socials">
+          <i title="Facebook" class="fab fa-facebook-square"></i>
+          <i title="Twitter" class="fab fa-twitter-square"></i>
+          <i title="Instagram" class="fab fa-instagram"></i>
+          <i title="linkedin" class="fab fa-linkedin"></i>
+        </div>
+        </div>
+      </div>
+          <div class="footer-bottom">
+              <p>COPYRIGHT 2021 &copy; | All Rights Reserved</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

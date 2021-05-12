@@ -1,0 +1,29 @@
+body {
+  background:#e0f2f1;
+  font-family: arial;
+  background-size: cover;
+  display:grid;
+  color: #004d40;
+}
+.image{
+  width: 100%;
+    height: 500px;
+    padding-top: 150px;
+    display:flex;
+}
+h2{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+}
+h2,p{
+  padding-left: 30px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+}
+.about,.vission, .mission{
+  display: flex;
+padding-bottom: 50px;
+}
